@@ -1,6 +1,6 @@
 import React from "react";
-import Bg from "../Images/Bg.svg";
-import SearchBar from '../Components/SearchBar';
+import Bg from "../../Images/Bg.svg";
+import SearchBar from '../Commercant/SearchBar';
 
 const Landing = () => {
     return (

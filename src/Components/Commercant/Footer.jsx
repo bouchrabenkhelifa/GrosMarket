@@ -1,10 +1,8 @@
 import React from "react";
-import GrosMaket from "../Images/GrosMarket.svg";
+import GrosMaket from "../../Images/GrosMarket.svg";
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaPhoneAlt, FaEnvelope, FaMapMarked } from 'react-icons/fa';
 import { AiOutlineEnvironment } from "react-icons/ai";
 import { AiOutlineMail, AiOutlinePhone } from 'react-icons/ai';
-import logo from '../Images/GrosMarket.svg';
-
 const Footer = () => {
     return (
         <div className="bg-[#243645] text-white py-8 md:px-4 sm: pl-[29%]">
@@ -49,6 +47,7 @@ const Footer = () => {
                 </div>
                
             </div>
+      
         </div>
     );
 }
