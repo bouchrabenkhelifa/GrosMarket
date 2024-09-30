@@ -1,7 +1,9 @@
 import React from 'react';
-
+import Navbar from "./NavBar";
+import Footer from "./Footer";
 function Formulaire() {
   return (
+    <div> <Navbar/>
     <div className='bg-beige'>
     <div className='w-full my-20 md:w-[60%] mx-auto'>
       <h1 className='font-bold text-2xl mb-8'>Bénéficier des meilleurs services :</h1>
@@ -100,6 +102,8 @@ function Formulaire() {
         </button>
       </div>
     </div>
+    </div>
+<Footer/>
     </div>
   );
 }

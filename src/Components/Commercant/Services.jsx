@@ -2,12 +2,15 @@ import React from 'react';
 import Marketing from '../../Images/Marketing.svg';
 import Shooting from '../../Images/Shooting.svg';
 import Consuling from '../../Images/Consulting.svg';
+import Navbar from "./NavBar";
+import Footer from "./Footer";
 
 import {Link} from "react-router-dom";
 
 function Services() {
   return (
     <div className="">
+        <Navbar/>
       {/* Container for all services */}
       <div className="w-[80%] mt-10 mx-auto mb-10 space-y-12">
         
@@ -61,6 +64,7 @@ function Services() {
         </div>
 
       </div>
+      <Footer/>
     </div>
   );
 }

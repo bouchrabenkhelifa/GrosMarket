@@ -42,14 +42,14 @@ const products = [
 
 function List() {
   return (
-    <div className="p-6  ml-[20%]">
+    <div className="p-6  ml-[2%]">
       <div className="flex justify-between mx-6 mb-6">
         <div>
           <h2 className="text-2xl font-bold">Produits</h2>
           <h4 className="text-gray-600">Accueil / Produits</h4>
         </div>
         <div>
-        <Link to='/Ajouter'> <button className="text-white flex items-center rounded px-4 py-2 bg-[#243645] hover:bg-[#1e2a35] transition">
+        <Link to='/Ajouter_produit'> <button className="text-white flex items-center rounded px-4 py-2 bg-[#243645] hover:bg-[#1e2a35] transition">
             <img src={Ajouter} className="pr-3" alt="Ajouter" />
             Ajouter un produit
           </button></Link>
@@ -60,7 +60,7 @@ function List() {
           <div key={product.id} className="border border-gray-300 rounded-lg p-4 shadow-md">
             <div className="flex mb-4">
               <div className="flex-shrink-0 w-32 h-30 mr-4">
-                <img src={product.image} alt={product.nom} className="w-full h-full object-cover rounded" />
+                <img src={product.image} alt={product.nom} className="w-h h-[80%] object-cover rounded" />
               </div>
               <div className="flex-1 flex pt-5 flex-col">
                 <h3 className="text-xl font-semibold mb-2">{product.nom}</h3>

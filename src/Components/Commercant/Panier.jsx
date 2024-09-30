@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import image from '../../Images/product7.jpeg'; 
+import Navbar from "./NavBar";
+import Footer from "./Footer";
 
 function Panier() {
   const [produits, setProduits] = useState([
@@ -40,6 +42,7 @@ function Panier() {
 
   return (
     <div>
+        <Navbar/>
       {/* Section d'en-tête */}
       <div className='text-center py-10'>
         <h1 className='font-semibold text-[#243645] text-2xl'>Mon Panier</h1>
@@ -90,10 +93,10 @@ function Panier() {
         {/* Bouton Commander */}
         <div className='flex my-5 justify-end'>
           <button className='bg-[#FFC300] text-white font-semibold px-6 py-1 rounded'>
-            Commander
+            Commande
           </button>
         </div>
-      </div>
+      </div> <Footer/>
     </div>
   );
 }

@@ -3,12 +3,15 @@ import { useLocation } from 'react-router-dom';
 import profile from '../../Images/profile.svg';
 import { FaStar } from 'react-icons/fa';
 import { AiOutlineHeart } from 'react-icons/ai';
+import Navbar from "./NavBar";
+import Footer from "./Footer";
 
 function Details() {
   const location = useLocation();
   const { product } = location.state || {};
 
   return (
+<div> <Navbar/>
     <div className='px-6 mb-12 mt-10 py-6 max-w-4xl mx-auto'>
       <div className="flex flex-col md:flex-row gap-16">
         {/* Images Section */}
@@ -59,6 +62,7 @@ function Details() {
         </div>
       </div>
     </div>
+    <Footer/></div>
   );
 }
 

@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import { FaFacebook, FaGoogle, FaApple } from "react-icons/fa";
+import {Link} from 'react-router-dom';
+import Navbar from "./NavBar";
+import Footer from "./Footer";
 
 const Login = () => {
   const [isLogin, setIsLogin] = useState(true);
@@ -9,6 +12,7 @@ const Login = () => {
   };
 
   return (
+    <div><Navbar/>
     <div className="flex flex-col justify-center items-center min-h-screen ">
       <div className="flex flex-col w-full sm:w-[75%] md:w-[60%] lg:w-[50%] xl:w-[40%] justify-center items-center bg-gray-200 p-8 rounded-lg ">
         <div className="flex flex-col items-center mb-6">
@@ -30,9 +34,10 @@ const Login = () => {
                 className="w-full p-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-yellow-500"
                 placeholder="Mot de passe"
               />
-              <button className="w-full text-white h-10 bg-yellow-400 rounded-lg hover:bg-yellow-500 focus:outline-none focus:ring-2 focus:ring-yellow-500">
+              <Link to='/fournisseur'>
+              <button className="w-full mt-5 text-white h-10 bg-yellow-400 rounded-lg hover:bg-yellow-500 focus:outline-none focus:ring-2 focus:ring-yellow-500">
                 Se connecter
-              </button>
+              </button></Link>
               <a href="#" className="block text-center text-blue-600 hover:underline" onClick={handleToggle}>
                 Créer un compte
               </a>
@@ -54,9 +59,10 @@ const Login = () => {
                 className="w-full p-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-yellow-500"
                 placeholder="Mot de passe"
               />
-              <button className="w-full text-white h-10 bg-yellow-400 rounded-lg hover:bg-yellow-500 focus:outline-none focus:ring-2 focus:ring-yellow-500">
+              <Link to="/fournisseur">
+              <button className="w-full mt-5 text-white h-10 bg-yellow-400 rounded-lg hover:bg-yellow-500 focus:outline-none focus:ring-2 focus:ring-yellow-500">
                 S'inscrire
-              </button>
+              </button></Link>
               <a href="#" className="block text-center text-blue-600 hover:underline" onClick={handleToggle}>
                 Se connecter
               </a>
@@ -69,6 +75,8 @@ const Login = () => {
           <FaGoogle className="w-6 h-6 text-red-600 hover:text-red-400" />
         </div>
       </div>
+    </div>
+    <Footer/>
     </div>
   );
 };

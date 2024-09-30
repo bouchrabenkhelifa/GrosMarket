@@ -3,7 +3,7 @@ import image from '../../Images/image.svg';
 
 function Ajouter_produit() {
   return (
-    <div className="p-6 ml-[20%]">
+    <div className="p-6  ml-[10%]">
       {/* En-tête */}
       <div className="mb-6">
         <h2 className="text-2xl font-bold">Ajouter un nouveau produit</h2>
