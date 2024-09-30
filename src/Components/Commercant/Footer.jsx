@@ -34,16 +34,16 @@ const Footer = () => {
                 </div>
                 <div className="column">
                     <h2 className="text-xl font-bold mb-4">INFORMATION</h2>
-                    <a href="#home" className="block mb-2 hover:underline text-[#D9D9D9]">Accueil</a>
+                    <a href="/" className="block mb-2 hover:underline text-[#D9D9D9]">Accueil</a>
                     <a href="#categories" className="block mb-2 hover:underline text-[#D9D9D9]">Catégories</a>
-                    <a href="#services" className="block mb-2 hover:underline text-[#D9D9D9]">Services</a>
+                    <a href="/services" className="block mb-2 hover:underline text-[#D9D9D9]">Services</a>
                 </div>
                 <div className="column">
                     <h2 className="text-xl font-bold mb-4">NOS PAGES</h2>
                     <a href="#account" className="block mb-2 hover:underline text-[#D9D9D9]">Mon compte</a>
                     <a href="#order-history" className="block mb-2 hover:underline text-[#D9D9D9]">Historique des commandes</a>
                     <a href="#order-tracking" className="block mb-2 hover:underline text-[#D9D9D9]">Suivi de commande</a>
-                    <a href="#services" className="block mb-2 hover:underline text-[#D9D9D9]">Services</a>
+                    <a href="/services" className="block mb-2 hover:underline text-[#D9D9D9]">Services</a>
                 </div>
                
             </div>
